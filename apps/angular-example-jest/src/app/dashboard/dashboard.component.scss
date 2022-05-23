@@ -1,0 +1,38 @@
+.dashboard {
+	&_title {
+		text-align: center;
+	}
+
+	&_heroes {
+		max-width: 600px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		&-link {
+			flex: 1 1 0px;
+			margin: 10px;
+			background-color: #ea5b0c;
+			border-radius: 2px;
+			padding: 1rem;
+			font-size: 1.2rem;
+			text-decoration: none;
+			color: #fff;
+			text-align: center;
+			width: 100%;
+
+			&:hover {
+				background-color: black;
+			}
+
+			@media (min-width: 600px) {
+				a {
+					width: 18%;
+					box-sizing: content-box;
+				}
+			}
+		}
+	}
+}

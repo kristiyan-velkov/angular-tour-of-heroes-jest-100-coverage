@@ -1,0 +1,59 @@
+.hero-search {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+
+	&_wrapper {
+		&-label {
+			display: block;
+			font-weight: bold;
+			font-size: 1.4rem;
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+		}
+
+		&-box {
+			padding: 0.5rem;
+			width: 100%;
+			max-width: 600px;
+			box-sizing: border-box;
+			display: block;
+
+			&:focus {
+				outline: #336699 auto 1px;
+			}
+		}
+	}
+
+	&_result {
+		margin-top: 0;
+		padding-left: 0;
+
+		&-item {
+			list-style-type: none;
+
+			&_link {
+				border-bottom: 1px solid gray;
+				border-left: 1px solid gray;
+				border-right: 1px solid gray;
+				display: inline-block;
+				width: 100%;
+				max-width: 600px;
+				padding: 0.5rem;
+				box-sizing: border-box;
+				text-decoration: none;
+				color: black;
+
+				&:hover {
+					background-color: #435a60;
+					color: white;
+				}
+			}
+		}
+	}
+}

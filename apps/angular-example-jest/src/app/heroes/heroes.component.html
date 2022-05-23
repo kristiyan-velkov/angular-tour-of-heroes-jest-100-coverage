@@ -1,0 +1,16 @@
+<section class="heroes">
+	<h2 class="heroes_title">My Heroes</h2>
+	<div class="heroes_info">
+		<label for="new-hero">Hero name: </label>
+		<input id="new-hero" class="heroes_info-input" #heroName />
+		<button class="heroes_info-btn-add" (click)="addHero(heroName.value); heroName.value = ''">Add hero</button>
+	</div>
+	<ul class="heroes_wrapper">
+		<li class="heroes_wrapper-item" *ngFor="let hero of heroes">
+			<a class="heroes_wrapper-item_link" routerLink="/detail/{{ hero.id }}">
+				<span class="heroes_wrapper-item_link-badge">{{ hero.id }}</span> {{ hero.name }} - {{ hero.strength }}
+			</a>
+			<button class="heroes_wrapper-item_btn-delete" title="delete hero" (click)="deleteHero(hero.id)">x</button>
+		</li>
+	</ul>
+</section>

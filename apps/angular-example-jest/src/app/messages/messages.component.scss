@@ -1,0 +1,42 @@
+/* MessagesComponent's private CSS styles */
+.messages {
+	margin: 100px auto;
+	background-color: #eee;
+	max-width: 400px;
+	padding: 20px;
+
+	&_title {
+		color: #000;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: lighter;
+		font-weight: bold;
+	}
+
+	&-list {
+		margin-top: 20px;
+		margin-bottom: 50px;
+
+		&_item {
+			border-bottom: 1px solid #ddd;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
+
+	&_clear-btn {
+		color: #fff;
+		background-color: #ea5b0c;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		padding: 10px;
+		font-size: 1rem;
+		border: none;
+		-webkit-box-shadow: 0px 0px 2px 0px #000000;
+		box-shadow: 0px 0px 2px 0px #000000;
+
+		&:hover {
+			color: #fff;
+			background-color: #000;
+		}
+	}
+}

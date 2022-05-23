@@ -1,0 +1,91 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+	margin: 0 0 2em 0;
+	list-style-type: none;
+	padding: 0;
+	width: 15em;
+
+	&_info {
+		&-input {
+			display: block;
+			width: 100%;
+			padding: 0.5rem;
+			margin: 1rem 0;
+			box-sizing: border-box;
+		}
+
+		&-btn-add {
+			padding: 0.5rem 1.5rem;
+			font-size: 1rem;
+			margin-bottom: 2rem;
+
+			&:hover {
+				color: white;
+				background-color: #ea5b0c;
+			}
+		}
+	}
+
+	&_wrapper {
+		&-item {
+			cursor: pointer;
+			display: flex;
+			justify-content: space-around;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			margin: 10px;
+
+			&:hover {
+				-webkit-box-shadow: 0px 0px 2px 0px #000000;
+				box-shadow: 0px 0px 2px 0px #000000;
+			}
+
+			&_link {
+				color: #333;
+				text-decoration: none;
+				background-color: #eee;
+				display: block;
+				width: 100%;
+
+				&:hover {
+					color: #fff;
+					background-color: #ea5b0c;
+				}
+
+				&:active {
+					background-color: #525252;
+					color: #fafafa;
+				}
+
+				&-badge {
+					display: inline-block;
+					font-size: small;
+					color: white;
+					padding: 0.8em 0.7em 0 0.7em;
+					background-color: #000;
+					line-height: 1em;
+					position: relative;
+					left: -1px;
+					top: 0px;
+					height: 1.8em;
+					min-width: 16px;
+					text-align: right;
+					margin-right: 0.8em;
+				}
+			}
+
+			&_btn-delete {
+				background-color: #eee;
+				color: red;
+				font-size: 14px;
+				padding: 8px 7px;
+				border: none;
+
+				&:hover {
+					background-color: red;
+					color: white;
+				}
+			}
+		}
+	}
+}

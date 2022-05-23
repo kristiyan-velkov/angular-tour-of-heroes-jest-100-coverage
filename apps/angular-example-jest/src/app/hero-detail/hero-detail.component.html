@@ -1,0 +1,20 @@
+<section class="hero-detail" *ngIf="hero">
+	<div class="hero-detail_info">
+		<h1 class="hero-detail_info-name">{{ hero.name | uppercase }} Hero - Details</h1>
+		<h3 class="hero-detail_info-strength">id: {{ hero.id }} | Strength: {{ hero.strength | strength }}</h3>
+	</div>
+	<div class="hero-detail_edit">
+		<div class="hero-detail_edit-row">
+			<label class="hero-detail_edit-row-label" for="hero-name">Hero name: </label>
+			<input id="hero-name" class="hero-detail_edit-row-input" [(ngModel)]="hero.name" placeholder="Hero name" />
+		</div>
+		<div class="hero-detail_edit-row">
+			<label class="hero-detail_edit-row-label" for="hero-strength">Strength: </label>
+			<input id="hero-strength" class="hero-detail_edit-row-input" [(ngModel)]="hero.strength" placeholder="Hero Strength" />
+		</div>
+	</div>
+	<div class="hero-detail_actions">
+		<button class="hero-detail_actions-btn-back" (click)="goBack()">Go back</button>
+		<button class="hero-detail_actions-btn-save" (click)="save(hero)">Save</button>
+	</div>
+</section>

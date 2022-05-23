@@ -1,0 +1,13 @@
+<section class="dashboard">
+    <app-hero-search></app-hero-search>
+    <h2 class="dashboard_title">Top Heroes</h2>
+    <div class="dashboard_heroes">
+        <a
+            class="dashboard_heroes-link"
+            *ngFor="let hero of heroes"
+            routerLink="/detail/{{ hero.id }}"
+        >
+            {{ hero.name }} ({{ hero.strength }})
+        </a>
+    </div>
+</section>

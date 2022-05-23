@@ -1,0 +1,59 @@
+%buttons {
+	margin-top: 20px;
+	margin-right: 20px;
+	background-color: #ea5b0c;
+	padding: 10px;
+	font-size: 1rem;
+	border: none;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 2px 0px #000000;
+	box-shadow: 0px 0px 2px 0px #000000;
+
+	&:hover {
+		background-color: #000;
+		color: #fff;
+	}
+
+	&:disabled {
+		background-color: #ea5b0c;
+		color: #ccc;
+		cursor: auto;
+	}
+}
+
+.hero-detail {
+	&_info {
+		&-name {
+		}
+
+		&-strength {
+		}
+	}
+
+	&_edit {
+		&-row {
+			&-label {
+				color: #000;
+				font-weight: bold;
+			}
+
+			&-input {
+				font-size: 1em;
+				padding: 10px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				border-radius: 3px;
+			}
+		}
+	}
+
+	&_actions {
+		&-btn-back {
+			@extend %buttons;
+		}
+
+		&-btn-save {
+			@extend %buttons;
+		}
+	}
+}

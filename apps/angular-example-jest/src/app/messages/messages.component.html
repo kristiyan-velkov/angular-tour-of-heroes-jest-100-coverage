@@ -1,0 +1,7 @@
+<section *ngIf="messageService.messages.length" class="messages">
+	<h2 class="messages_title">Messages</h2>
+	<div class="messages_list">
+		<div *ngFor="let message of messageService.messages" class="messages_list-item">{{ message }}</div>
+	</div>
+	<button class="messages_clear-btn" (click)="clearAllMessages()">Clear messages</button>
+</section>
