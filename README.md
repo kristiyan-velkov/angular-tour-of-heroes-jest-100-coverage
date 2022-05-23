@@ -3,9 +3,9 @@
 ###### Author: [Kristiyan Velkov](https://www.linkedin.com/in/kristiyan-velkov-763130b3/)
 
 ######  Documents:
-[Kristiyan Velkov - Presentation for Unit Testing](./docs/Kristiyan%20Velkov%20-%20Presentation%20for%20Unit%20Testing.pdf)
-[Kristiyan Velkov - Testing Different types](./docs/Kristiyan%20Velkov%20-%20Testing%20Different%20types.pdf)
-[Kristiyan Velkov - RULES FOR UNIT TESTING](./docs/Kristiyan%20Velkov%20-RULES%20FOR%20UNIT%20TESTING.pdf)
+- [Kristiyan Velkov - Presentation for Unit Testing](./docs/Kristiyan%20Velkov%20-%20Presentation%20for%20Unit%20Testing.pdf)
+- [Kristiyan Velkov - Testing Different types](./docs/Kristiyan%20Velkov%20-%20Testing%20Different%20types.pdf)
+- [Kristiyan Velkov - RULES FOR UNIT TESTING](./docs/Kristiyan%20Velkov%20-RULES%20FOR%20UNIT%20TESTING.pdf)
 
 ## Table of contents
 
